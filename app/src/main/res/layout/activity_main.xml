@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal"
+        android:text="Resetuj konto"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/podajE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Podaj E-mail: "
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:layout_height="48dp"
+        android:width="200dp"
+        android:height="80dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:hint="..."
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/podajH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Podaj hasło: "
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+    <EditText
+        android:id="@+id/haslo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="textPassword"
+        android:width="200dp"
+        android:height="80dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:hint="..."
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/powtorzH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powtórz hasło: "
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+    <EditText
+        android:id="@+id/haslo2"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_height="48dp"
+        android:width="200dp"
+        android:height="80dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:hint="..."
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/zatwierdz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="200dp"
+        android:height="60dp"
+        android:text="ZATWIERDŹ"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/komunikat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Autor: Igor Litwin" />
+
+</LinearLayout>
